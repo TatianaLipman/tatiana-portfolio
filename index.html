@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Tatiana Lipman – Scientific Editor & Medical Communicator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="robots" content="noindex, nofollow" />
+  <style>
+    :root {
+      --bg: #f5f5f7;
+      --card: #ffffff;
+      --text-main: #222222;
+      --text-muted: #555555;
+      --accent: #1f6feb;
+      --accent-soft: #e0ecff;
+      --border-soft: #dddddd;
+      --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+      --radius-lg: 18px;
+      --radius-pill: 999px;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    .page { max-width: 960px; margin: 0 auto; padding: 32px 20px 48px; }
+
+    header { margin-bottom: 32px; }
+
+    .hero {
+      background: linear-gradient(135deg, #ffffff, #f0f4ff);
+      border-radius: 24px;
+      padding: 28px 26px;
+      box-shadow: var(--shadow-soft);
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    @media (min-width: 720px) {
+      .hero { padding: 32px 32px; flex-direction: row; justify-content: space-between; align-items: center; }
+    }
+
+    .hero-main { max-width: 520px; }
+
+    .pill {
+      display: inline-flex; align-items: center; gap: 8px; padding: 4px 12px;
+      border-radius: var(--radius-pill); background: var(--accent-soft);
+      font-size: 12px; color: var(--accent); font-weight: 500;
+      letter-spacing: 0.02em; text-transform: uppercase;
+    }
+
+    .pill-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); }
+
+    h1 { font-size: 28px; margin-top: 12px; margin-bottom: 4px; }
+
+    @media (min-width: 720px) { h1 { font-size: 32px; } }
+
+    .hero-sub { font-size: 15px; color: var(--text-muted); margin-bottom: 4px; }
+    .hero-line { font-size: 13px; color: var(--text-muted); margin-top: 2px; }
+
+    .hero-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 10px; }
+
+    .tag {
+      padding: 4px 10px; border-radius: var(--radius-pill);
+      border: 1px solid var(--border-soft);
+      font-size: 12px; color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.8);
+    }
+
+    .hero-side { text-align: left; margin-top: 10px; font-size: 13px; color: var(--text-muted); }
+
+    @media (min-width: 720px) {
+      .hero-side { text-align: right; max-width: 240px; }
+    }
+
+    .hero-side-title { font-weight: 600; margin-bottom: 4px; }
+
+    main { display: flex; flex-direction: column; gap: 24px; margin-top: 28px; }
+
+    section {
+      background: var(--card); border-radius: var(--radius-lg);
+      padding: 20px 18px 22px; box-shadow: var(--shadow-soft);
+    }
+
+    @media (min-width: 720px) {
+      section { padding: 22px 22px 26px; }
+    }
+
+    section h2 { font-size: 18px; margin-bottom: 10px; }
+    section p { font-size: 14px; color: var(--text-muted); }
+
+    .section-intro { margin-bottom: 14px; }
+
+    .sample-list {
+      display: grid; grid-template-columns: 1fr; gap: 12px; margin-top: 6px;
+    }
+
+    @media (min-width: 720px) {
+      .sample-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    }
+
+    .sample-card {
+      border-radius: 14px; border: 1px solid var(--border-soft);
+      padding: 12px; display: flex; flex-direction: column; gap: 6px;
+      background: #fafbff;
+    }
+
+    .sample-title { font-size: 14px; font-weight: 600; }
+    .sample-desc { font-size: 13px; color: var(--text-muted); }
+
+    .sample-link a {
+      text-decoration: none; color: var(--accent);
+      border-bottom: 1px dashed rgba(31, 111, 235, 0.4);
+      padding-bottom: 1px; font-size: 13px;
+    }
+
+    footer {
+      text-align: center; font-size: 12px;
+      color: var(--text-muted); margin-top: 26px; padding-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <div class="hero">
+        <div class="hero-main">
+          <div class="pill">
+            <span class="pill-dot"></span>
+            Portfolio prepared in support of a Medical Writer application
+          </div>
+          <h1>Tatiana Lipman, MSc Pharmacology</h1>
+          <div class="hero-sub">
+            Scientific editor &amp; medical communicator with a background in translational oncology and pharmacology.
+          </div>
+          <div class="hero-line">
+            Oncology • Pharmacology • Translational Research • Scientific &amp; Public Communications
+          </div>
+          <div class="hero-tags">
+            <span class="tag">HCP-facing content</span>
+            <span class="tag">Patient education</span>
+            <span class="tag">Plain-language writing</span>
+            <span class="tag">AMA-aligned editing</span>
+          </div>
+        </div>
+        <div class="hero-side">
+          <div class="hero-side-title">What I do</div>
+          I specialize in refining complex medical and scientific material, ensuring clarity, structural integrity, and fidelity to evidence for professional audiences.
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section id="about">
+        <h2>About</h2>
+        <p class="section-intro">
+          I’m a scientist-turned-editor with 15+ years in translational oncology, pharmacology, and clinical research.
+          I’ve worked with academic teams and hospital-based clinicians to design studies, interpret data, and prepare
+          manuscripts, reports, and educational materials.
+        </p>
+        <p>
+          I focus on medical and scientific editing: tightening structure, checking claims against evidence,
+          and making complex ideas readable without losing nuance or accuracy.
+        </p>
+      </section>
+
+      <section id="samples">
+        <h2>Selected Writing Samples</h2>
+        <p class="section-intro">
+          The samples below demonstrate my ability to translate complex medical evidence for distinct audiences, including
+          healthcare professionals, patients, and general readership.
+        </p>
+
+        <div class="sample-list">
+          <div class="sample-card">
+            <div class="sample-title">HCP Medical Writing</div>
+            <div class="sample-desc">
+              PARP inhibitors in ovarian cancer — a clinically focused overview emphasizing biomarker-driven patient selection.
+            </div>
+            <div class="sample-link">
+              <a href="Samples/Tatiana-Lipman_HCP-Writing-Sample.pdf" target="_blank" rel="noreferrer">View full sample (PDF)</a>
+            </div>
+          </div>
+
+          <div class="sample-card">
+            <div class="sample-title">Patient Education</div>
+            <div class="sample-desc">
+              BRCA testing explained for patients, balancing medical accuracy with accessible language and supportive tone.
+            </div>
+            <div class="sample-link">
+              <a href="Samples/Tatiana-Lipman_Patient-Writing-Sample.pdf" target="_blank" rel="noreferrer">View full sample (PDF)</a>
+            </div>
+          </div>
+
+          <div class="sample-card">
+            <div class="sample-title">Plain-Language Patient Education</div>
+            <div class="sample-desc">
+              A simplified adaptation designed for broad readability while preserving scientific integrity.
+            </div>
+            <div class="sample-link">
+              <a href="Samples/Tatiana-Lipman_Plain-Language-Writing-Sample.pdf" target="_blank" rel="noreferrer">View full sample (PDF)</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      © <span id="year"></span> Tatiana Lipman — Medical writing &amp; scientific communication.
+    </footer>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
